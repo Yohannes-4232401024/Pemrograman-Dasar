@@ -1,0 +1,153 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMUJoA2xmwE9o9Hl84rrc8J",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Yohannes-4232401024/Pemrograman-Dasar/blob/main/tugas%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "9V_-vvdTjp8w"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ca0c33b7",
+        "outputId": "990496a5-6f33-4a0f-b307-dee5983744dd"
+      },
+      "source": [
+        "#Tugas nomor 6\n",
+        "#non-primitif\n",
+        "# biodata saya\n",
+        "nama = \"Yohannes Paruntungan Purba\"\n",
+        "nim = \"4232401024\"\n",
+        "umur = 20\n",
+        "hobi = \"Badminton\"\n",
+        "jurusan = \"Teknik Elektro\"\n",
+        "status_lulus = False\n",
+        "\n",
+        "# Menggunakan Dictionary\n",
+        "biodata_dict = {\n",
+        "    \"Nama\": nama,\n",
+        "    \"NIM\": nim,\n",
+        "    \"Umur\": umur,\n",
+        "    \"Hobi\": hobi,\n",
+        "    \"Jurusan\": jurusan,\n",
+        "    \"Status Kelulusan\": status_lulus\n",
+        "}\n",
+        "print(\"--- Biodata (Dictionary) ---\")\n",
+        "for key, value in biodata_dict.items():\n",
+        "    print(f\"{key}: {value}\")\n",
+        "print(\"-\" * 28)\n",
+        "\n",
+        "# Menggunakan List (list sederhana)\n",
+        "biodata_list_simple = [nama, nim, umur, hobi, jurusan, status_lulus]\n",
+        "print(\"\\n--- Biodata (List Sederhana) ---\")\n",
+        "print(biodata_list_simple)\n",
+        "print(\"-\" * 34)\n",
+        "\n",
+        "# Menggunakan List of Tuples\n",
+        "biodata_list_of_tuples = [\n",
+        "    (\"Nama\", nama),\n",
+        "    (\"NIM\", nim),\n",
+        "    (\"Umur\", umur),\n",
+        "    (\"Hobi\", hobi),\n",
+        "    (\"Jurusan\", jurusan),\n",
+        "    (\"Status Kelulusan\", status_lulus)\n",
+        "]\n",
+        "print(\"\\n--- Biodata (List of Tuples) ---\")\n",
+        "for item in biodata_list_of_tuples:\n",
+        "    print(f\"{item[0]}: {item[1]}\")\n",
+        "print(\"-\" * 32)\n",
+        "\n",
+        "\n",
+        "# Menggunakan Tuple\n",
+        "biodata_tuple = (nama, nim, umur, hobi, jurusan, status_lulus)\n",
+        "print(\"\\n--- Biodata (Tuple) ---\")\n",
+        "print(biodata_tuple)\n",
+        "print(\"-\" * 25)\n",
+        "\n",
+        "# Menggunakan Set (untuk nilai-nilai unik seperti hobi atau mata kuliah)\n",
+        "# Perlu diingat set tidak cocok untuk menyimpan semua biodata karena tidak ada label dan urutan\n",
+        "hobi_set = {\"Badminton\", \"Membaca\", \"Programming\", \"Badminton\"} # \"Badminton\" akan muncul sekali saja\n",
+        "print(\"\\n--- Hobi (Set) ---\")\n",
+        "print(hobi_set)\n",
+        "print(\"-\" * 18)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "--- Biodata (Dictionary) ---\n",
+            "Nama: Yohannes Paruntungan Purba\n",
+            "NIM: 4232401024\n",
+            "Umur: 20\n",
+            "Hobi: Badminton\n",
+            "Jurusan: Teknik Elektro\n",
+            "Status Kelulusan: False\n",
+            "----------------------------\n",
+            "\n",
+            "--- Biodata (List Sederhana) ---\n",
+            "['Yohannes Paruntungan Purba', '4232401024', 20, 'Badminton', 'Teknik Elektro', False]\n",
+            "----------------------------------\n",
+            "\n",
+            "--- Biodata (List of Tuples) ---\n",
+            "Nama: Yohannes Paruntungan Purba\n",
+            "NIM: 4232401024\n",
+            "Umur: 20\n",
+            "Hobi: Badminton\n",
+            "Jurusan: Teknik Elektro\n",
+            "Status Kelulusan: False\n",
+            "--------------------------------\n",
+            "\n",
+            "--- Biodata (Tuple) ---\n",
+            "('Yohannes Paruntungan Purba', '4232401024', 20, 'Badminton', 'Teknik Elektro', False)\n",
+            "-------------------------\n",
+            "\n",
+            "--- Hobi (Set) ---\n",
+            "{'Membaca', 'Programming', 'Badminton'}\n",
+            "------------------\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "jN2hx1T2p6v4"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
